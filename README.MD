@@ -12,7 +12,7 @@ $ conda activate cap394
 $ jupyter notebook
 
 Packages
-- numpy
+- numpy=1.17.0
 - matplotlib.pyplot
 - basemap
 - netcdf4
