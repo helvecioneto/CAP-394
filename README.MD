@@ -17,10 +17,7 @@ Packages
 - basemap
 - basemap-data-hires
 
-
 ### Complemento Basemap Python3
-$ sudo apt-get install libgeos-3.X.X
-$ sudo apt-get install libgeos-dev
 $ pip install --user https://github.com/matplotlib/basemap/archive/master.zip
 
 
