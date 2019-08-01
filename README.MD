@@ -3,6 +3,7 @@ Repositório para disciplina Introdução a Data Science (CAP-394), do Instituto
 
 ## Instalação
 
+### Complemento Basemap Python3
 $ sudo apt-get install libgeos-3.X.X
 $ sudo apt-get install libgeos-dev
 $ pip install --user https://github.com/matplotlib/basemap/archive/master.zip
@@ -12,12 +13,14 @@ $ conda activate cap394
 $ jupyter notebook
 
 Packages
-- numpy=1.17.0
+- numpy
 - matplotlib.pyplot
 - basemap
-- netcdf4
-- geos
-- proj4
+- xarray
+- pyart
 
 
+### Visualização
+
+-01-EDA.ipynb
 
