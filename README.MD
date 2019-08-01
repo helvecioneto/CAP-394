@@ -4,7 +4,7 @@ Repositório para disciplina Introdução a Data Science (CAP-394), do Instituto
 ## Instalação
 
 
-$ conda create -n cap394 python=3.6
+$ conda create -n cap394 python=3.6 \n
 $ conda activate cap394
 $ conda install jupyter
 $ jupyter notebook
