@@ -61,13 +61,13 @@ def radar_plot(**kwargs):
     xi, yi = m(lon, lat)
     ## SIPAM RADAR
     xm, ym = m(my_coords[1],my_coords[0])
-    radar = m.plot(xm,ym, marker='X',color='r', label='RADAR')
+    radar = m.plot(xm,ym, marker='^',color='r', label='RADAR')
 
-    #T3/Manacapuru: RADAR, RADIOSONDE e ETC - Principal [-3.148556, -59.992000]
+    #T3/Manacapuru: RADAR, RADIOSONDE e ETC - Principal [-3.212929, -60.598371]
     #Lat = 3° 12' 46.56" S
     #Long = 60° 35' 54.16" W
-    t3x,t3y = m(-60.355416,-3.124656)
-    T3 = m.plot(t3x,t3y, marker='P',color='y', label='T3')
+    t3x,t3y = m(-60.598371,-3.212929)##-3.212929, -60.598371
+    T3 = m.plot(t3x,t3y, marker='X',color='b', label='T3')
 
     ## PRECIPTACAO
     cs = m.pcolormesh(xi,yi,rr, cmap = cmap, norm = norm, ax=ax)
