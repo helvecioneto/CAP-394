@@ -12,11 +12,10 @@ from lib.clusterization import clust
 from lib.createData import createData
 from lib.centroid import centroidData
 
+import os
 
-day = 20140923
-
-def run():
-    
+def run(day):
+    print('Rodando... ',day)
     dados = readData(day)
     rrain = dados[0]
     wFiles = pd.DataFrame()
@@ -27,8 +26,12 @@ def run():
         #centroid = centroidData(dataClusters)
         wFiles = wFiles.append(dataClusters)
 
-    wFiles.to_csv('../output/Moderate_Total_OUTPUT_'+str(day)+'.csv')     
+    wFiles.to_csv('../output/Moderate_Total_OUTPUT_'+str(day)+'.csv')
+    print('Criado',day)
+    pass
     
-run()
-    
-    
+path = '../data/radar/'
+
+for day in sorted(os.listdir(path)):
+    rodada = run(day)
+    rodada = None

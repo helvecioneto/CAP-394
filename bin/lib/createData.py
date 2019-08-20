@@ -15,7 +15,8 @@ import numpy as np
 
 
 ## Varriable to get LAT LON
-fisrtRead = readData(20140923)
+
+fisrtRead = readData(20140103)
 lat,lon = fisrtRead[1],fisrtRead[2]
 
 path = '../data/radar/'

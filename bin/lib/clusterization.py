@@ -5,13 +5,13 @@ import numpy as np
 import pandas as pd
 
 def clust(time1):    #11.53:
-    
+
     dx ,dy = [],[]
     te = None
     
     for i in range(241):
         for j in range(241):
-            if not np.isnan(time1[i][j]) and time1[i][j] > 0:
+            if not np.isnan(time1[i][j]) and time1[i][j] > 5:
                 dx.append(i)
                 dy.append(j)
 
