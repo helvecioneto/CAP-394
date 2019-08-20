@@ -24,8 +24,8 @@ def run():
     for i in range(len(rrain)):
         clusters = clust(rrain[i])
         dataClusters = createData(day,i,clusters,rrain[i])
-        centroid = centroidData(dataClusters)
-        wFiles = wFiles.append(centroid)
+        #centroid = centroidData(dataClusters)
+        wFiles = wFiles.append(dataClusters)
 
     wFiles.to_csv('../output/Moderate_Total_OUTPUT_'+str(day)+'.csv')     
     

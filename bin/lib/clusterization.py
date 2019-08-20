@@ -9,11 +9,9 @@ def clust(time1):    #11.53:
     dx ,dy = [],[]
     te = None
     
-    #print(time1)
-    
     for i in range(241):
         for j in range(241):
-            if not np.isnan(time1[i][j]) and time1[i][j] > 10:
+            if not np.isnan(time1[i][j]) and time1[i][j] > 0:
                 dx.append(i)
                 dy.append(j)
 
