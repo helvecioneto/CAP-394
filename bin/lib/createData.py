@@ -45,7 +45,6 @@ def createData(day,time,clusters,frames):
             r = tRelation((LAT_[i],LON_[i]),radar)
             rlation.append(r)
             
-        
 
         FAM1['IND_X'], FAM1['IND_Y'] = clusters['x1'],clusters['y1']
         FAM1['LAT'],FAM1['LON'] = LAT_,LON_

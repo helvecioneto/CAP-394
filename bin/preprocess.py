@@ -11,6 +11,7 @@ from lib.read_files import readData
 from lib.clusterization import clust
 from lib.createData import createData
 from lib.centroid import centroidData
+from lib.pre_processing import pre_processing
 
 import os
 
@@ -21,12 +22,13 @@ def run(day):
     wFiles = pd.DataFrame()
     
     for i in range(len(rrain)):
-        clusters = clust(rrain[i])
+        pre = pre_processing(rrain[i])
+        clusters = clust(pre)
         dataClusters = createData(day,i,clusters,rrain[i])
         centroid = centroidData(dataClusters)
-        wFiles = wFiles.append(dataClusters)
+        wFiles = wFiles.append(centroid)
 
-    wFiles.to_csv('../output/centroids/Moderate_Total_OUTPUT_'+str(day)+'.csv')
+    wFiles.to_csv('../output/centroids/OUTPUT_'+str(day)+'.csv')
     print('Criado',day)
     pass
     
