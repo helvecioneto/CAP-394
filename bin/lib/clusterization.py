@@ -11,7 +11,7 @@ def clust(time1):    #11.53:
     
     for i in range(241):
         for j in range(241):
-            if not np.isnan(time1[i][j]) and time1[i][j] > 5:
+            if not np.isnan(time1[i][j]) and time1[i][j] > 21.8:
                 dx.append(i)
                 dy.append(j)
 

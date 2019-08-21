@@ -23,10 +23,10 @@ def run(day):
     for i in range(len(rrain)):
         clusters = clust(rrain[i])
         dataClusters = createData(day,i,clusters,rrain[i])
-        #centroid = centroidData(dataClusters)
+        centroid = centroidData(dataClusters)
         wFiles = wFiles.append(dataClusters)
 
-    wFiles.to_csv('../output/Moderate_Total_OUTPUT_'+str(day)+'.csv')
+    wFiles.to_csv('../output/centroids/Moderate_Total_OUTPUT_'+str(day)+'.csv')
     print('Criado',day)
     pass
     
