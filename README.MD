@@ -1,8 +1,7 @@
 ## CAP-394
-Repositório para disciplina Introdução a Data Science (CAP-394), do Instituto Nacional de Pesquisas Espaciais.
+Repository for course Introduction to Data Science (CAP-394) from the National Institute for Space Research.
 
-## Instalação
-
+## Instalation
 
 <p>$ conda create -n cap394 python=3.6</p>
 <p>$ conda activate cap394</p>
@@ -10,18 +9,23 @@ Repositório para disciplina Introdução a Data Science (CAP-394), do Instituto
 <p>$ jupyter notebook</p>
 
 Packages
-- numpy=1.17.0
+- numpy
+- pandas
 - matplotlib.pyplot
 - xarray
+- glob
+- datetime
 - arm_pyart
 - basemap
 - basemap-data-hires
 
-### Complemento Basemap Python3
+### Basemap Python3
 $ pip install --user https://github.com/matplotlib/basemap/archive/master.zip
 
 
-### Visualização
+### Visualization
+
+[Exploratory Analysis of Meteorological Radar Dataset](https://github.com/helvecioneto/CAP-394/blob/master/01-EDA.ipynb)
 
 -01-EDA.ipynb
 
