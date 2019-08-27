@@ -18,6 +18,7 @@ Packages
 - arm_pyart
 - basemap
 - basemap-data-hires
+- plotly
 
 ### Basemap Python3
 $ pip install --user https://github.com/matplotlib/basemap/archive/master.zip
