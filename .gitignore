@@ -1,3 +1,6 @@
+output/centroids
+output/fortracc
 .ipynb_checkpoints
 *.pyc
 *.idea
+.env
