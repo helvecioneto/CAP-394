@@ -15,6 +15,8 @@ Packages
 - xarray
 - glob
 - datetime
+- sklearn
+- geopy
 - arm_pyart
 - basemap
 - basemap-data-hires
