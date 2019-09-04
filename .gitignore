@@ -1,5 +1,7 @@
 output/centroids
 output/fortracc
+output/tracking
+output/clusters
 .ipynb_checkpoints
 *.pyc
 *.idea
