@@ -21,6 +21,8 @@ Packages
 - basemap
 - basemap-data-hires
 - plotly
+- plotly-orca
+- putils
 
 ### Basemap Python3
 $ pip install --user https://github.com/matplotlib/basemap/archive/master.zip
