@@ -1,7 +1,7 @@
 output/centroids
+output/clusters
 output/fortracc
 output/tracking
-output/clusters
 data/radar_ALL
 .ipynb_checkpoints
 *.pyc
