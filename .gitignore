@@ -1,5 +1,5 @@
 output/centroids
-output/clusters
+output/cluster
 output/fortracc
 output/tracking
 data/radar_ALL
